@@ -1,4 +1,0 @@
-#Sun Jun 08 08:54:01 WIB 2025
-base.0=D\:\\project\\delta2\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
