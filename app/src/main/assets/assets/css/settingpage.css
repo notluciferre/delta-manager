@@ -1,0 +1,239 @@
+@font-face {
+  font-family: SF;
+  src: url(../fonts/SF/SFPRODISPLAYBOLD.OTF);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: SF;
+  src: url(../fonts/SF/SFPRODISPLAYMEDIUM.OTF);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: SF;
+  src: url(../fonts/SF/SFPRODISPLAYREGULAR.OTF);
+  font-weight: 400;
+}
+
+h1, h2{
+  font-family: 'SF';
+  font-weight: 700; 
+  font-style: normal;
+}
+
+h3 {
+  font-family: 'SF';
+  font-weight: 600; 
+  font-style: normal;
+}
+
+h4, h5, h6{
+  font-family: 'SF';
+  font-weight: 400; 
+  font-style: normal;
+}
+    
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: white;
+    color: #333;
+    padding-bottom: 70px;
+    font-family: SF;
+    font-weight: 400;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+header {
+  padding: 15px 10px;
+  max-height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header svg {
+  fill: #ff4444;
+  height: 200px;
+}
+
+.homepage-mode {
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin: 1.5rem;
+}
+
+.homepage-mode h2 {
+  font-size: 24px;
+  margin-bottom: 1rem;
+}
+
+.homepage-mode button {
+  background-color: #f4f4f4;
+  height: 4.5rem;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.homepage-mode button div {
+  margin-left: 1rem;
+}
+
+.homepage-mode button h3,
+.homepage-mode button svg {
+  display: flex;
+  color: #ff4444;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  transition: filter 0.3s ease, fill 0.3s ease;
+}
+
+.homepage-mode button,
+.homepage-mode button:active {
+  outline: none;
+  box-shadow: none; /* opsional, untuk menghilangkan efek lain */
+  border: none; /* opsional, jika ada border */
+}
+
+.settingpage-advanced {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5rem;
+  gap: 1rem;
+}
+
+.settingpage-advanced h2 {
+  font-size: 24px;
+}
+
+.switch-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desc-group {
+  font-size: 16px;
+}
+
+.desc-group h3 {
+  color: ;
+}
+
+.desc-group h4 {
+  color: #ff4444;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  justify-self: center;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
+}
+
+.nav-button {
+all: unset;
+display: flex;
+flex-direction: column;
+align-items: center;
+cursor: pointer;
+}
+
+
+.nav-button.active {
+  color: #ff4444;
+}
+
+.nav-button svg {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 2px;
+  fill: currentColor;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #ff4444;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff4444;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

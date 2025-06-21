@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/settingpage.css">
+</head>
+<body>
+    <header>
+        <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100px" height="1000" viewBox="0 0 1080.000000 1080.000000" preserveAspectRatio="xMidYMid meet"><g transform="translate(0.000000,1080.000000) scale(0.100000,-0.100000)" stroke="none"><path d="M1374 5714 c-22 -152 59 -300 207 -375 l58 -29 356 0 c325 0 361 -2 413 -19 214 -73 332 -230 332 -446 0 -184 -85 -337 -227 -407 -53 -26 -80 -32 -149 -36 l-84 -5 0 -225 0 -225 108 6 c373 20 673 260 762 611 61 239 43 496 -46 685 -107 227 -310 389 -599 478 l-90 28 -517 3 -517 3 -7 -47z"/><path d="M3508 4828 l-3 -913 733 3 732 2 0 195 0 195 -480 0 -480 0 2 168 3 167 403 3 402 2 0 190 0 190 -405 0 -405 0 0 155 0 155 460 0 460 0 0 200 0 200 -710 0 -710 0 -2 -912z"/><path d="M5260 4830 l0 -910 690 0 690 0 0 200 0 200 -435 0 -435 0 0 710 0 710 -255 0 -255 0 0 -910z"/><path d="M6500 5535 l0 -205 280 0 280 0 0 -705 0 -705 260 0 260 0 0 705 0 705 278 0 277 0 0 205 0 205 -817 0 -818 0 0 -205z"/><path d="M8427 4837 c-218 -496 -397 -905 -397 -909 0 -4 117 -9 260 -10 167 -2 260 1 260 7 0 5 30 85 67 177 l67 168 390 -2 390 -3 69 -172 69 -172 268 -3 c147 -2 267 -1 265 2 -4 6 -792 1783 -802 1808 -4 9 -65 12 -257 12 l-251 0 -398 -903z m772 88 l109 -270 -230 -3 c-127 -1 -233 -1 -235 1 -2 2 44 122 102 265 58 144 110 274 116 289 13 34 -3 68 138 -282z"/><path d="M1820 4630 l0 -220 -227 -2 -228 -3 -3 -227 -2 -228 225 0 225 0 0 225 0 225 228 2 227 3 3 223 2 222 -225 0 -225 0 0 -220z"/></g></svg>
+    </header>
+
+    <section class="homepage-mode">
+        <h2>Profile</h2>
+        <button id="batteryMode" class="homepage-batterymode" onclick="setBatteryMode()">
+            <div class="wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff4444"><path d="M320-80q-17 0-28.5-11.5T280-120v-640q0-17 11.5-28.5T320-800h80v-80h160v80h80q17 0 28.5 11.5T680-760v640q0 17-11.5 28.5T640-80H320Zm40-480h240v-160H360v160Z"/></svg>
+            <h3>Battery mode</h3>
+            </div>
+        </button>
+
+        <button id="autoMode" class="homepage-autoMode" onclick="setAutoMode()">
+            <div class="wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff4444"><path d="M418-340q24 24 62 23.5t56-27.5l224-336-336 224q-27 18-28.5 55t22.5 61Zm62-460q59 0 113.5 16.5T696-734l-76 48q-33-17-68.5-25.5T480-720q-133 0-226.5 93.5T160-400q0 42 11.5 83t32.5 77h552q23-38 33.5-79t10.5-85q0-36-8.5-70T766-540l48-76q30 47 47.5 100T880-406q1 57-13 109t-41 99q-11 18-30 28t-40 10H204q-21 0-40-10t-30-28q-26-45-40-95.5T80-400q0-83 31.5-155.5t86-127Q252-737 325-768.5T480-800Zm7 313Z"/></svg>
+            <h3>Automatic Mode</h3>
+            </div>
+        </button>
+
+        <button id="performanceMode" class="homepage-performancemode" onclick="setPerformanceMode()">
+            <div class="wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ff4444"><path d="M418-340q24 24 62 23.5t56-27.5l224-336-336 224q-27 18-28.5 55t22.5 61Zm62-460q59 0 113.5 16.5T696-734l-76 48q-33-17-68.5-25.5T480-720q-133 0-226.5 93.5T160-400q0 42 11.5 83t32.5 77h552q23-38 33.5-79t10.5-85q0-36-8.5-70T766-540l48-76q30 47 47.5 100T880-406q1 57-13 109t-41 99q-11 18-30 28t-40 10H204q-21 0-40-10t-30-28q-26-45-40-95.5T80-400q0-83 31.5-155.5t86-127Q252-737 325-768.5T480-800Zm7 313Z"/></svg>
+            <h3>Performance mode</h3>
+            </div>
+        </button>
+    </section>
+
+    <section class="settingpage-advanced">
+        <h2>Advanced</h2>
+
+        <div class="switch-wrapper">
+            <div class="desc-group">
+                <h3>Disable thermal</h3>
+                <h4>Disabling all thermal without reboot</h4>
+            </div>
+            <label class="switch">
+                <input type="checkbox" id="disableThermal">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        <div class="switch-wrapper">
+            <div class="desc-group">
+                <h3>Disable GPU throthling</h3>
+                <h4>Disabling all thermal without reboot</h4>
+            </div>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+
+        
+    </section>
+    
+    <footer>
+        <a href="mainpage.html" class="nav-button">
+            <svg viewBox="0 0 24 24"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8v-10h-8v10zm0-18v6h8V3h-8z"/></svg>
+            <span>Beranda</span>
+        </a>
+
+        <a href="#" class="nav-button active">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z"/></svg>
+            <span>Setting</span>
+        </a>
+    </footer>
+
+    <script src="assets/js/settingpage.js"></script>
+</body>
+</html>
