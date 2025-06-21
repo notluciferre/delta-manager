@@ -1,0 +1,10 @@
+# IDE & Config
+local.properties
+key.jks
+.gradle/
+.idea/
+
+# Output
+build/
+release/
+debug/
